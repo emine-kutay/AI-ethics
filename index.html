@@ -83,16 +83,14 @@ const groups = [
     bg: "#FCEBEB", border: "#E24B4A", tbg: "#F7C1C1", tc: "#791F1F", dot: "#E24B4A",
     tanim: "AI systems must be designed and used to protect the well-being of individuals and communities. This includes preventing physical and psychological harm. In educational contexts, this involves monitoring for emotional attachment, social pressure, and the erosion of human connection in learning environments.",
     risks: [
-      "Emotional & psychological harm: Students form parasocial bonds with AI tutors or chatbots.",
-      "Emotional & psychological harm: Pressure to use AI creates anxiety for those who resist.",
-      "Emotional & psychological harm: Reduced peer and teacher interaction weakens belonging."
+      "Emotional & psychological harm: AI chatbots might provide insensitive or harmful responses to a student in an emotional crisis.",
+      "Privacy: Exposure of sensitive or confidential student information to malicious actors either accidentally or as the result of a cyberattack can lead to personal harm."
     ],
     questions: [
-      "Could anyone suffer psychological or social harm as a result of using this system?",
-      "Are we monitoring for unhealthy emotional attachments between students and AI?",
-      "How does this tool impact the frequency and quality of human interaction in the classroom?"
+      "Could anyone suffer psychological, emotional, or cognitive harm as a result of using this system?",
+      "How do I handle a situation where a student receives distressing content from the AI?"
     ],
-    example: "A school counselor tests a new mental health chatbot for several weeks in a sandbox environment to ensure it correctly identifies keywords related to self-harm and immediately redirects the user to a human professional."
+    example: "A school counselor tests a new mental health chatbot for several weeks in a sandbox environment to ensure it correctly identifies keywords related to self-harm and immediately redirects the user to a human professional.",
   },
   {
     id: 1,
@@ -101,14 +99,13 @@ const groups = [
     bg: "#FAEEDA", border: "#EF9F27", tbg: "#FAC775", tc: "#633806", dot: "#BA7517",
     tanim: "The use of AI should be limited to what is necessary and appropriate. Schools should avoid intrusive monitoring and ensure that data collection remains proportional to educational needs. 'Safety' framing should not be used to justify excessive surveillance that inhibits student self-expression.",
     risks: [
-      "Over-surveillance: Keystroke logging, eye-tracking, and emotion detection systems gather excessive data.",
-      "Over-surveillance: Students self-censor when they feel watched, limiting their participation and exploration.",
-      "Over-surveillance: 'Safety' framing used to justify intrusive monitoring protocols."
+        "Over-Surveillance: Systems that record genstures, eye movements, and tone of voice collect data far beyond educational needs.",
+        "Privacy: Collecting biometric data for minor tasks creates permanent records; Using behavioral data for commercial marketing instead of purely for educational support."
     ],
     questions: [
-      "Is the level of monitoring required truly proportional to the educational benefit?",
-      "Are students changing their behavior or 'self-censoring' because they know they are being tracked?",
-      "Could we achieve this goal with a less invasive method than keystroke or emotion tracking?"
+      "Could we achieve this educational goal using a simpler tool that collects less data?",
+      "Is the benefit of this AI feature worth the privacy trade-off for the students?",
+      "Do we really need 'real-time' tracking, or would a summary at the end be sufficient?"
     ],
     example: "An elementary school rejects a classroom management AI that uses facial recognition to track student attention levels, deciding that traditional teacher observation is a more proportional and less invasive way to manage engagement."
   },
@@ -120,13 +117,13 @@ const groups = [
     tanim: "AI systems must be inclusive and equitable. This involves ensuring that algorithms do not unfairly disadvantage minority groups or penalize students with disabilities and diverse linguistic backgrounds through narrow training data.",
     risks: [
       "Inequality: Algorithmic bias disadvantages minority groups in assessments or recommendations.",
-      "Inequality: Rural and low-income schools lack access to AI tools, widening the inequality gap.",
-      "Inequality: Disability and multilingual students are penalised by narrow training data that doesn't account for their needs."
+       "Access Gap: Rural and low-income schools lack access to AI tools, widening the inequality gap."
+      
     ],
     questions: [
-        "Does the training data represent our diverse student population, or only a narrow subset?",
-        "Are students with disabilities or English language learners being unfairly penalized by the algorithm?",
-        "How are we ensuring that students without high-speed internet at home are not left behind?"
+        "Does the system produce systematically different outcomes for different groups of students?",
+        "Are all students given equal opportunity to benefit from the tool?",
+        "Could the system misinterpret culturally specific expressions?"
     ],
     example: "Before adopting an AI-powered essay grader, a school department runs a pilot test using a diverse sample of essays from students with different linguistic backgrounds to check if the tool systematically scores ESL students lower."
   },
@@ -135,16 +132,17 @@ const groups = [
     label: "Principle 4",
     ilke: "Sustainability",
     bg: "#EAF3DE", border: "#639922", tbg: "#C0DD97", tc: "#27500A", dot: "#3B6D11",
-    tanim: "Sustainability covers the long-term environmental, economic, and social costs of integrating AI. It requires schools to consider the carbon footprint of models, the risks of vendor dependency, and the potential erosion of human cognitive skills over time.",
+    tanim: "Sustainability covers the long-term environmental, economic, and social costs of integrating AI. It requires schools to consider the carbon footprint of models and the risks of vendor dependency.",
     risks: [
-      "Sustainability: Large AI models have significant carbon footprints that impact environmental health.",
-      "Sustainability: Over-dependence on commercial vendors creates fragility and economic risk for schools.",
-      "Sustainability: Student skills erode when AI replaces thinking rather than supporting it."
+      "Environmental Impact: Large AI models have significant carbon footprints that impact environmental health.",
+      "Economic Impact: Over-dependence on commercial vendors creates fragility and economic risk for schools.",
+       "Social Impact: Long-term data accumulation might impact a student's future opportunities if used for external scoring."
     ],
     questions: [
       "What is the long-term environmental impact of deploying this large-scale AI model?",
-      "Are we becoming so dependent on a single vendor that we couldn't function without them?",
-      "Is this tool helping students learn a skill, or is it simply performing the thinking for them?"
+     "Is the tool cost-effective over time, or does it create long-term dependency?",
+    "Am I using this AI tool because it is pedagogically necessary, or merely convenient?",
+        "Does this tool have a policy regarding environmental sustainability?"
     ],
     example: "A high school curriculum committee integrates 'AI Literacy' into the syllabus, ensuring that students learn the mechanics of writing and problem-solving manually before they are allowed to use generative AI tools to assist them."
   },
@@ -156,13 +154,12 @@ const groups = [
     tanim: "The final decision-making power must remain with humans. AI challenges what it means for work to be genuinely a student's own. Educators must define and detect misuse while ensuring that assessment design adapts to maintain academic honesty and human authorship.",
     risks: [
       "Academic integrity: Students submit AI-generated work as their own, undermining human authorship.",
-      "Academic integrity: Educators struggle to define and detect misuse, leading to a breakdown in academic honesty.",
-      "Academic integrity: Assessment design has not caught up with AI capabilities, making traditional testing ineffective."
+      "Deskilling: Teachers who delegate all feedback to AI may lose their professional diagnostic intuition over time.; Student skills erode when AI replaces thinking rather than supporting it."
     ],
     questions: [
       "How do we define 'original work' in an environment where AI assistance is readily available?",
-      "Are our current assessment methods capable of measuring a student's actual understanding rather than their AI-prompting skills?",
-      "Does the teacher retain the authority to override an AI-suggested grade or evaluation?"
+      "Are students actively engaging with learning, or passively relying on AI outputs?",
+      "In which moments do teachers/students accept, modify, or reject AI outputs?"
     ],
     example: "A university policy states that AI-assisted grading tools can only provide a 'suggested grade.' The instructor must manually review the AI's feedback and enter the final grade personally to maintain human responsibility."
   },
@@ -174,19 +171,19 @@ const groups = [
     bg: "#E1F5EE", border: "#1D9E75", tbg: "#9FE1CB", tc: "#04342C", dot: "#0F6E56",
     tanim: "Users must be informed about how their data is accessed and secured. Transparency is required to prevent exposure of excessive personal data and to ensure that tech companies are held accountable for their data practices regarding student privacy.",
     risks: [
-      "Privacy: Platforms collect far more personal data than needed for learning purposes.",
-      "Privacy: Third-party vendors may access or sell student data without clear disclosure.",
-      "Privacy: Students remain unaware of what data is stored, shared, or used to predict behavior."
+      "Privacy: Platforms collect far more personal data than needed for learning purposes.; Third-party vendors may access or sell student data without clear disclosure.",
+      "Over-Surveillance: Systems that record genstures, eye movements, and tone of voice collect data far beyond educational needs."
     ],
     questions: [
-      "Have we reviewed the vendor's data-sharing policy for hidden clauses regarding student data sales?",
-      "Are students and parents fully informed about exactly what data points are being collected?",
-      "Can the vendor explain why they need access to specific student data beyond the core educational task?"
+        "Can the vendor explain why they need access to specific student data beyond the core educational task?",
+        "Are students and parents fully informed about exactly what data points are being collected?",
+        "Have we clearly informed students and parents when they are interacting with an AI rather than a human?",
+        "Is the documentation for the tool clear about what data is shared with third parties?"
     ],
     example: "A math teacher explains to the class that the AI tutor they are using tracks their speed and accuracy to suggest specific practice problems, and provides a 'Help' button that shows exactly which skills the AI thinks the student needs to work on."
   }
 ];
-
+    
 let current = 0;
 
 function renderPills() {
