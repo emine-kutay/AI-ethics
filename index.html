@@ -85,13 +85,12 @@ const groups = [
     risks: [
       "Misguidance: An AI career tool might steer a student toward the wrong path, causing academic or professional harm.",
       "Emotional Harm: AI chatbots might provide insensitive or harmful responses to a student in an emotional crisis.",
-      "Physical Risk: In labs or PE, AI monitoring systems might fail to detect dangerous situations correctly.",
-      "Data Breach: Exposure of sensitive student data to malicious actors can lead to severe personal harm."
+      "Data Leak: Exposure of sensitive or confidential student information to malicious actors either accidentally or as the result of a cyberattack can lead to personal harm"
     ],
     questions: [
-      "Does this tool have a 'kill switch' or a way for a teacher to intervene immediately if it behaves strangely?",
-      "Who is vulnerable if this system fails or makes a mistake?",
-      "How do we handle a situation where a student receives distressing content from the AI?"
+      "Could anyone suffer physical, psychological, or cognitive harm as a result of using this system?",
+      "Who is vulnerable if this system makes a mistake or fails?",
+      "How do I handle a situation where a student receives distressing content from the AI?"
     ],
     example: "A school counselor tests a new mental health chatbot for several weeks in a sandbox environment to ensure it correctly identifies keywords related to self-harm and immediately redirects the user to a human professional."
   },
@@ -100,12 +99,11 @@ const groups = [
     label: "Principle 2",
     ilke: "Proportionality",
     bg: "#FAEEDA", border: "#EF9F27", tbg: "#FAC775", tc: "#633806", dot: "#BA7517",
-    tanim: "The use of AI should be limited to what is necessary and appropriate to achieve a legitimate educational aim. Every AI intervention must be evaluated to ensure its benefits outweigh the potential infringement on rights. In practice, schools should avoid 'over-automation' and ensure that data collection is kept to a minimum (data minimization). If a non-AI solution is equally effective and less intrusive, it should be preferred.",
+    tanim: "The use of AI should be limited to what is necessary and appropriate to achieve a legitimate educational aim. Every AI intervention must be evaluated to ensure its benefits outweigh the potential violation on rights. In practice, schools should avoid 'over-automation' and ensure that data collection is kept to a minimum (data minimization). If a non-AI solution is equally effective and less intrusive, it should be preferred.",
     risks: [
-      "Over-Surveillance: Systems that record keystrokes, eye movements, and tone of voice collect data far beyond educational needs.",
-      "Chilling Effect: Constant monitoring can lead students to self-censor and stop thinking or discussing freely.",
-      "Privacy Violation: Collecting biometric data for minor tasks creates permanent records that cannot be 'undone'.",
-      "Goal Creep: Using behavioral data for commercial marketing instead of purely for educational support."
+      "Over-Surveillance: Systems that record genstures, eye movements, and tone of voice collect data far beyond educational needs.",
+      "Privacy Violation: Collecting biometric data for minor tasks creates permanent records.",
+      "Data Commodification: Using behavioral data for commercial marketing instead of purely for educational support."
     ],
     questions: [
       "Could we achieve this educational goal using a simpler tool that collects less data?",
@@ -124,12 +122,11 @@ const groups = [
       "Algorithmic Bias: Predictive models might assign lower potential to minority students based on historical disadvantages.",
       "Language Bias: Models trained mostly on English data might unfairly penalize students who use different dialects or languages.",
       "Access Gap: Students in regions with poor infrastructure cannot benefit from AI, widening the digital divide.",
-      "Accessibility Issues: Students with special needs might be flagged as 'outliers' and negatively assessed."
     ],
     questions: [
-      "How does this tool perform for students whose first language is not English?",
-      "Does this AI tool work equally well for students with visual or auditory impairments?",
-      "Is this tool only accessible to students who can afford high-end devices at home?"
+        "Does the system produce systematically different outcomes for different groups of students?",
+        "Are all students given equal opportunity to benefit from the tool?",
+        "Could the system misinterpret culturally specific expressions?"
     ],
     example: "Before adopting an AI-powered essay grader, a school department runs a pilot test using a diverse sample of essays from students with different linguistic backgrounds to check if the tool systematically scores ESL students lower."
   },
@@ -142,13 +139,16 @@ const groups = [
     risks: [
       "Carbon Footprint: Large models consume significant energy; deploying them school-wide has a high environmental load.",
       "Vendor Dependency: If a school becomes 100% dependent on one provider, they are vulnerable to price hikes or closures.",
-      "Skill Erosion: Over-reliance on AI might lead students to lose foundational thinking and writing skills over time.",
+      "Cognitive Deskilling: Over-reliance on AI might lead students to lose foundational thinking and writing skills over time.",
       "Social Impact: Long-term data accumulation might impact a student's future opportunities if used for external scoring."
     ],
     questions: [
       "If this AI tool stops working tomorrow, do our students still have the skills to complete the task manually?",
-      "Are we teaching students how to use AI responsibly, or just how to 'get the answer'?",
-      "What is the long-term plan for the data we are generating today?"
+      "Is the tool supporting durable learning, or short-term efficiency?",
+      "Am I using this AI tool because it is pedagogically necessary, or merely convenient?",
+      "What is the long-term plan for the data we are generating today?",
+      "Is the tool cost-effective over time, or does it create long-term dependency?",
+    "Does this tool have a policy regarding environmental sustainability?"
     ],
     example: "A high school curriculum committee integrates 'AI Literacy' into the syllabus, ensuring that students learn the mechanics of writing and problem-solving manually before they are allowed to use generative AI tools to assist them."
   },
@@ -160,14 +160,15 @@ const groups = [
     tanim: "The final decision-making power must always remain with humans. AI should assist and augment human intelligence, not replace it. In schools, teachers must retain pedagogical authority, and students must be empowered to exercise critical thinking and self-determination. This principle requires 'meaningful human oversight,' where users understand the AI's suggestions but can choose to ignore or override them based on their professional or personal judgment.",
     risks: [
       "Automation Bias: Teachers might stop questioning AI suggestions and just 'rubber-stamp' its decisions.",
-      "Accountability Gap: Using 'the AI decided' as an excuse for unfair grading makes it impossible to hold anyone responsible.",
+      "Dependency:",
       "Right to Appeal: Automated systems often lack a clear path for students to challenge or discuss a result.",
       "Deskilling: Teachers who delegate all feedback to AI may lose their professional diagnostic intuition over time."
     ],
     questions: [
       "Does the student know how to appeal a grade or a decision made with the help of AI?",
-      "Is the teacher required to review and 'sign off' on every critical AI-generated output?",
-      "Does the AI serve the teacher, or is the teacher just an operator for the AI?"
+      "Does the AI serve the teacher, or is the teacher just an operator for the AI?",
+       "In which moments do I accept, modify, or reject AI outputs?",
+       "Are students actively engaging with learning, or passively relying on AI outputs?"
     ],
     example: "A university policy states that AI-assisted grading tools can only provide a 'suggested grade.' The instructor must manually review the AI's feedback and enter the final grade personally to maintain human responsibility."
   },
